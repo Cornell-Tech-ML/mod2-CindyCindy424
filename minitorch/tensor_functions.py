@@ -9,6 +9,8 @@ import numpy as np
 
 import minitorch
 
+# from minitorch.tensor import Tensor
+
 from . import operators
 from .autodiff import Context
 from .tensor_ops import SimpleBackend, TensorBackend
