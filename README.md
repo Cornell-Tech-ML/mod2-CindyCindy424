@@ -23,7 +23,7 @@ The files that will be synced are:
 
 ### (1) Simple
 
-> learning rate: 0.5 
+> learning rate: 0.5
 
 > number of epochs: 500
 
@@ -92,7 +92,7 @@ Epoch: 500/500, loss: 0.15192626749504884, correct: 50
 ### (2) Diag
 
 
-> learning rate: 0.5 
+> learning rate: 0.5
 
 > number of epochs: 500
 
@@ -160,7 +160,7 @@ Epoch: 500/500, loss: 0.48850234326190956, correct: 50
 
 ### (3) Split
 
-> learning rate: 0.5 
+> learning rate: 0.5
 
 > number of epochs: 700
 
@@ -250,7 +250,7 @@ Epoch: 700/700, loss: 1.7795898810881148, correct: 50
 
 ### (4) Xor
 
-> learning rate: 0.5 
+> learning rate: 0.5
 
 > number of epochs: 700
 

@@ -294,7 +294,7 @@ class Tensor:
 
     def __mul__(self, b: TensorLike) -> Tensor:
         return Mul.apply(self, self._ensure_tensor(b))
-    
+
     def __lt__(self, b: TensorLike) -> Tensor:
         return LT.apply(self, self._ensure_tensor(b))
 
@@ -334,47 +334,45 @@ class Tensor:
 
     def exp(self) -> Tensor:
         return Exp.apply(self)
-    
+
     def sum(self, dim: Optional[int] = None) -> Tensor:
-        "Compute the sum over dimension `dim`"
+        """Compute the sum over dimension `dim`"""
         if dim is None:
             return Sum.apply(self.contiguous().view(self.size), self._ensure_tensor(0))
         else:
             return Sum.apply(self, self._ensure_tensor(dim))
 
     def mean(self, dim: Optional[int] = None) -> Tensor:
-        "Compute the mean over dimension `dim`"
+        """Compute the mean over dimension `dim`"""
         if dim is not None:
             return self.sum(dim) / self.shape[dim]
         else:
             return self.sum() / self.size
 
     def permute(self, *order: int) -> Tensor:
-        "Permute tensor dimensions to *order"
+        """Permute tensor dimensions to *order"""
         return Permute.apply(self, tensor(list(order)))
 
     def view(self, *shape: int) -> Tensor:
-        "Change the shape of the tensor to a new shape with the same size"
+        """Change the shape of the tensor to a new shape with the same size"""
         return View.apply(self, tensor(list(shape)))
-    
+
     def zero_grad_(self) -> None:
-        """
-        Set .grad to None
-        """
+        """Set .grad to None"""
         self.grad = None
-    
+
     @property
     def size(self) -> int:
-        """
-        Returns:
-            int: size of the tensor
+        """Returns
+        int: size of the tensor
+
         """
         return self._tensor.size
-    
+
     @property
     def dims(self) -> int:
+        """Returns
+        int : dimensionality of the tensor
+
         """
-        Returns:
-             int : dimensionality of the tensor
-        """
-        return self._tensor.dims  
+        return self._tensor.dims
