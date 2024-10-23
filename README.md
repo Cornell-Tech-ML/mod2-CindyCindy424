@@ -32,7 +32,7 @@ The files that will be synced are:
 > hidden layers = 2
 
 ![alt text](pic/image.png)
-![alt text](image.png)
+![alt text](pic/image11.png)
 Log:
 ```
 Epoch: 0/500, loss: 0, correct: 0
@@ -100,8 +100,8 @@ Epoch: 500/500, loss: 0.15192626749504884, correct: 50
 
 > hidden layers = 2
 
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](pic/image-1.png)
+![alt text](pic/image-2.png)
 
 Logs:
 ```
@@ -168,8 +168,8 @@ Epoch: 500/500, loss: 0.48850234326190956, correct: 50
 
 > hidden layers = 4
 
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](pic/image-3.png)
+![alt text](pic/image-4.png)
 
 
 Logs:
@@ -258,8 +258,8 @@ Epoch: 700/700, loss: 1.7795898810881148, correct: 50
 
 > hidden layers = 5
 
-![alt text](image-5.png)
-![alt text](image-6.png)
+![alt text](pic/image-5.png)
+![alt text](pic/image-6.png)
 
 Logs:
 ```
